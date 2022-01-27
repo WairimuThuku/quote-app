@@ -24,7 +24,7 @@
             <label for="exampleFormControlInput1">Author</label>
             <input #musician="ngModel" [(ngModel)]="newQuote.author" name="author" type="text" class="form-control" id="name" placeholder="author" required>
             <!-- {{newQuote.author}} -->
-            <div [hidden]="musician.valid || musician.pristine" class="alert alert-danger">
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
                 <p>
                     This field is empty!
                 </p>
